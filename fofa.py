@@ -3,7 +3,7 @@ import time
 import re
 import base64
 
-with open('url.txt', 'w')as f: #用于清空文件
+with open('url.txt', 'w')as f: 
     f.write('')
 
 grammar = input('查询语法:')
@@ -12,7 +12,7 @@ grammars = grammar.encode("utf-8")
 
 grammars_base64 = base64.b64encode(grammars)
 
-grammars_sub = re.sub("[']",'',str(grammars_base64))#过滤编码后的 b ' =
+grammars_sub = re.sub("[']",'',str(grammars_base64))
 
 for number in range(int(input('起：')),int(input('始：'))):
 
@@ -40,11 +40,3 @@ for number in range(int(input('起：')),int(input('始：'))):
         except OSError:
             pass
         continue
-
-
-
-
-
-
-
-
