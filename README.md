@@ -2,21 +2,21 @@
 
 # 项目介绍
 
-此脚本分为两个版本  
-分别是对应普通会员的爬虫版本fofa.py,以及对应高级会员的api版本fofapro.py  
-当然普通会员也是可以使用fofapro.py  
+此脚本分为两个版本
+分别是对应普通会员的爬虫版本fofa.py,以及对应高级会员的api版本fofapro.py
+当然普通会员也是可以使用fofapro.py
 
 ## fofapro.py
 
 采用了fofa的api
-实现了如下功能  
-1 【导出纯地址.txt】  
+实现了如下功能
+1 【导出纯地址.txt】
 2 【导出完整文件.xls】
-![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)  
+![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)
 ![fofapro-xls](https://hellohy.top/wp-content/uploads/2021/07/2-1024x629.png)
 
 ## fofa.py
-采用了爬虫的形式进行爬取  
+采用了爬虫的形式进行爬取
 批量的福音
 ![fofa-pycharm](https://hellohy.top/wp-content/uploads/2021/07/3-1024x568.png)
 
@@ -37,7 +37,7 @@ import re
 ## 其他
 代码注释已经给得很清楚了，根据自己的口味随时调整
 
-未来有时间会增加一键排除垃圾信息  
+未来有时间会增加一键排除垃圾信息
 
 如果师傅们还有什么需要添加的或是建议记得在Github或是博客给我里留言哦
 
