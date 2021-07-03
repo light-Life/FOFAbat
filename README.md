@@ -16,11 +16,24 @@
 采用了爬虫的形式进行爬取  
 批量的福音
 
+## 注意📢
+
+需要使用的库
+
+```
+import requests
+import base64
+import json
+import time
+import xlwt
+import re
+```
+
 ## 其他
 
 师傅们还有什么需要添加的或是建议记得在Github或是博客给我里留言哦
 
 师傅们看我这么用心个Star✩不过分吧*ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚
 
-[浅浅淡淡](https://hellohy.top/)
+[个人博客](https://hellohy.top/)
 
