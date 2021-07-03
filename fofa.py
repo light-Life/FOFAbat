@@ -1,3 +1,7 @@
+# !/usr/bin/python
+# -*- coding:utf-8 -*-
+# author: huayang
+# time: 2021.7.2-2021.7.3
 import requests
 import time
 import re
