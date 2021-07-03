@@ -3,6 +3,17 @@ import time
 import re
 import base64
 
+print("""\033[1;36m.
+  `   ______    / . . __     `  . `。
+   ` |  ____|    .   / _|     . `   `
+    `| |__    .___   | |_    __ _ `
+    `|  __|   / _ \  |  _|  / _  |`.
+   ` | |   . | (_) | | |   | (_| |`
+   ` |_|    ` \___/  |_|    \__,_|`
+.`    . .         
+              by:huayang                             
+\033[0m""")
+
 with open('url.txt', 'w')as f: 
     f.write('')
 
@@ -20,7 +31,7 @@ for number in range(int(input('起：')),int(input('始：'))):
     print('\n》》》》》》》》》第',number,'页《《《《《《《《《\n')
     headers = {
         'User-Agent': 'Mozilla/5.0',
-        'Cookie': ''
+        'Cookie': '' #记得写cookie
     }
 
     time.sleep(2)
@@ -34,7 +45,7 @@ for number in range(int(input('起：')),int(input('始：'))):
             response = requests.get(i,verify=False,timeout=2)
 
             if response.status_code == 200:
-                print('[+] 正在写入：', i)
+                print('\n\033[1;32m[+]正在写入:\033[0m', i)
                 with open('url.txt', 'a')as f:
                     f.write(str(i) + '\n')
         except OSError:
