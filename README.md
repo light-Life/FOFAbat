@@ -37,5 +37,5 @@ import re
 
 师傅们看我这么用心个Star✩不过分吧*ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚
 
-[个人博客](https://hellohy.top/)
+[个人博客](https://hellohy.top/).
 
