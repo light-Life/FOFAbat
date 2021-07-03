@@ -20,9 +20,9 @@ print("""\033[1;36m
                         V:1.0          by:huayang                             
 \033[0m""")
 
-email = '' #邮箱
+email = ''  #邮箱
 
-key = '' #key
+key = ''  #key
 
 query = base64.b64encode(input('查询语句:').encode('utf-8'))
 
