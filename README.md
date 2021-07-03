@@ -12,11 +12,13 @@
 实现了如下功能  
 1 【导出纯地址.txt】  
 2 【导出完整文件.xls】
-未来有时间会增加一键排除垃圾信息  
+![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)  
+![fofapro-xls](https://hellohy.top/wp-content/uploads/2021/07/2-1024x629.png)
 
 ## fofa.py
 采用了爬虫的形式进行爬取  
 批量的福音
+![fofa-pycharm](https://hellohy.top/wp-content/uploads/2021/07/3-1024x568.png)
 
 ## 注意📢
 
@@ -34,6 +36,8 @@ import re
 
 ## 其他
 代码注释已经给得很清楚了，根据自己的口味随时调整
+
+未来有时间会增加一键排除垃圾信息  
 
 如果师傅们还有什么需要添加的或是建议记得在Github或是博客给我里留言哦
 
