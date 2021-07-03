@@ -28,7 +28,7 @@ import time
 import xlwt
 import re
 ```
-
+记得添加邮箱、key或是cookie哈
 ## 其他
 
 师傅们还有什么需要添加的或是建议记得在Github或是博客给我里留言哦
