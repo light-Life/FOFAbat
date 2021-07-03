@@ -2,14 +2,14 @@
 
 # 项目介绍
 
-此脚本分为两个版本
-分别是对应普通会员的爬虫版本fofa.py,以及对应高级会员的api版本fofapro.py
+此脚本分为两个版本  
+分别是对应普通会员的爬虫版本fofa.py,以及对应高级会员的api版本fofapro.py  
 当然普通会员也是可以使用fofapro.py
 
 ## fofapro.py
 
 采用了fofa的api
-实现了如下功能
+实现了如下功能  
 1 【导出纯地址.txt】  
 2 【导出完整文件.xls】  
 ![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)  
