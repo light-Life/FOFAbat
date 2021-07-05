@@ -17,12 +17,12 @@ print("""\033[1;36m
 | |     | (_) | | |   | (_| |  |________|  | |
 |_|      \___/  |_|    \__,_|              |_|      ro
 
-                        V:1.0          by:huayang                             
+                        V:1.1          by:huayang                             
 \033[0m""")
 
-email = ''  #邮箱
+email = '1273292809@qq.com' #邮箱
 
-key = ''  #key
+key = '171746577425c1d2a11b654f8a8cfa1f' #key
 
 query = base64.b64encode(input('查询语句:').encode('utf-8'))
 
@@ -130,7 +130,7 @@ else:
             worksheet.col(3).width = 250 * 20
             worksheet.col(4).width = 800 * 20
             worksheet.col(6).width = 240 * 20
-            worksheet.col(12).width = 280 * 20
+            worksheet.col(7).width = 280 * 20
 
              #创建颜色
             pattern = xlwt.Pattern()  # 创建模式对象
@@ -147,12 +147,12 @@ else:
             worksheet.write(number, 4, title)
             worksheet.write(number, 5, protocol)
             worksheet.write(number, 6, server)
-            worksheet.write(number, 7, country)
+            worksheet.write(number, 7, icp)
             worksheet.write(number, 8, country_name)
             worksheet.write(number, 9, province)
             worksheet.write(number, 10, city)
             worksheet.write(number, 11, isp)
-            worksheet.write(number, 12, icp)
+            worksheet.write(number, 12, country)
             worksheet.write(number, 13, as_number)
             worksheet.write(number, 14, as_organization)
             worksheet.write(number, 15, longitude)
@@ -170,12 +170,12 @@ else:
         worksheet.write(0, 4, '标题', style)
         worksheet.write(0, 5, '协议', style)
         worksheet.write(0, 6, '服务器', style)
-        worksheet.write(0, 7, '国家', style)
+        worksheet.write(0, 7, 'ICP备案', style)
         worksheet.write(0, 8, '国家名', style)
         worksheet.write(0, 9, '省份', style)
         worksheet.write(0, 10, '城市', style)
         worksheet.write(0, 11, '运营商', style)
-        worksheet.write(0, 12, 'ICP备案', style)
+        worksheet.write(0, 12, '国家', style)
         worksheet.write(0, 13, 'AS号', style)
         worksheet.write(0, 14, 'AS组织', style)
         worksheet.write(0, 15, '经度', style)
