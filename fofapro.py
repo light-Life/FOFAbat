@@ -22,7 +22,7 @@ print("""\033[1;36m
 
 email = '1273292809@qq.com' #邮箱
 
-key = '171746577425c1d2a11b654f8a8cfa1f' #key
+key = '3fcc3d3717bdf7429bd28660761ad201' #key
 
 query = base64.b64encode(input('查询语句:').encode('utf-8'))
 
@@ -55,9 +55,6 @@ elif 'request params not valid' in response.text:
 elif 'FOFA coin is not enough' in response.text:
     print("\n\033[1;31m[-] F币不足\033[0m")
 
-elif 'Internal Server Error' in response.text:
-    print("\n\033[1;31m[-] 服务器异常\033[0m")
-
 elif 'limits must less than' in response.text:
     print("\n\033[1;31m[-] 请求数必须小于1个达不溜\033[0m")
 
@@ -78,17 +75,19 @@ else:
                 url = 'http://' + url
                 try:
                     response = requests.get(url, verify=False, timeout=2)
-                    print('\n\033[1;32m[+]正在写入:\033[0m', url)
-                    with open(time + '.txt', 'a')as f:
-                        f.write(str(url) + '\n')
+                    if response.status_code == 200:
+                        print('\n\033[1;32m[+]正在写入:\033[0m', url)
+                        with open(time + '.txt', 'a')as f:
+                            f.write(str(url) + '\n')
                 except:
                     pass
             else:
                 try:
                     response = requests.get(url, verify=False, timeout=2)
-                    print('\n\033[1;32m[+]正在写入:\033[0m', url)
-                    with open(time + '.txt', 'a')as f:
-                        f.write(str(url) + '\n')
+                    if response.status_code == 200:
+                        print('\n\033[1;32m[+]正在写入:\033[0m', url)
+                        with open(time + '.txt', 'a')as f:
+                            f.write(str(url) + '\n')
                 except:
                     pass
 
