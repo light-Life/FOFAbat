@@ -7,7 +7,7 @@ import base64
 import json
 import time
 import xlwt
-import re 
+import re
 
 print("""\033[1;36m
  ______           __                       _______
@@ -17,7 +17,7 @@ print("""\033[1;36m
 | |     | (_) | | |   | (_| |  |________|  | |
 |_|      \___/  |_|    \__,_|              |_|      ro
 
-                        V:1.1          by:huayang                             
+                        V:1.0          by:huayang                             
 \033[0m""")
 
 email = '1273292809@qq.com' #邮箱
@@ -28,7 +28,7 @@ query = base64.b64encode(input('查询语句:').encode('utf-8'))
 
 query_sub = re.sub("[']",'',str(query))
 
-size = input("输出数量:")
+size = '10000'
 
 fields = 'host,title,ip,domain,port,country,province,city,country_name,header,server,protocol,banner,cert,isp,as_number,as_organization,latitude,longitude,icp'
 
@@ -78,19 +78,17 @@ else:
                 url = 'http://' + url
                 try:
                     response = requests.get(url, verify=False, timeout=2)
-                    if response.status_code == 200:
-                        print('\n\033[1;32m[+]正在写入:\033[0m', url)
-                        with open(time + '.txt', 'a')as f:
-                            f.write(str(url) + '\n')
+                    print('\n\033[1;32m[+]正在写入:\033[0m', url)
+                    with open(time + '.txt', 'a')as f:
+                        f.write(str(url) + '\n')
                 except:
                     pass
             else:
                 try:
                     response = requests.get(url, verify=False, timeout=2)
-                    if response.status_code == 200:
-                        print('\n\033[1;32m[+]正在写入:\033[0m', url)
-                        with open(time + '.txt', 'a')as f:
-                            f.write(str(url) + '\n')
+                    print('\n\033[1;32m[+]正在写入:\033[0m', url)
+                    with open(time + '.txt', 'a')as f:
+                        f.write(str(url) + '\n')
                 except:
                     pass
 
