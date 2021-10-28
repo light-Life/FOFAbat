@@ -12,8 +12,7 @@
 实现了如下功能  
 1 【导出纯地址.txt】  
 2 【导出完整文件.xls】  
-![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)  
-![fofapro-xls](https://hellohy.top/wp-content/uploads/2021/07/image-4-1024x629.png)  
+  
 
 ## fofa.py
 采用了爬虫的形式进行爬取
