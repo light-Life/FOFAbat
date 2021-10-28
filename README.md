@@ -1,5 +1,3 @@
-# 感谢昨天认为我是妹子的那位师傅，激动得我连敲几行代码(*^▽^*)，希望能面基嘿嘿😋
-
 # 项目介绍
 
 此脚本分为两个版本  
@@ -12,13 +10,10 @@
 实现了如下功能  
 1 【导出纯地址.txt】  
 2 【导出完整文件.xls】  
-![fofapro-os](https://hellohy.top/wp-content/uploads/2021/07/1-1024x619.png)  
-![fofapro-xls](https://hellohy.top/wp-content/uploads/2021/07/image-4-1024x629.png)
 
 ## fofa.py
 采用了爬虫的形式进行爬取
 批量的福音  
-![fofa-pycharm](https://hellohy.top/wp-content/uploads/2021/07/3-1024x568.png)
 
 ## 注意📢
 
@@ -43,7 +38,7 @@ import re
 
 师傅们看我这么用心给个Star✩不过分吧*ଘ(੭*ˊᵕˋ)੭* ੈ✩‧₊˚
 
-[个人博客](https://hellohy.top/).
+[文章地址](https://hellohy.top/huayang/6815.html).
 
 ## 2021.7.5
 优化xls排版问题
