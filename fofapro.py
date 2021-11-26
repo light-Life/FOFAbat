@@ -22,7 +22,7 @@ print("""\033[1;36m
 
 email = '1273292809@qq.com' #邮箱
 
-key = '3fcc3d3717bdf7429bd28660761ad201' #key
+key = '' #key
 
 query = base64.b64encode(input('查询语句:').encode('utf-8'))
 
