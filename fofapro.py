@@ -20,7 +20,7 @@ print("""\033[1;36m
                         V:1.0          by:huayang                             
 \033[0m""")
 
-email = '1273292809@qq.com' #邮箱
+email = '' #邮箱
 
 key = '' #key
 
