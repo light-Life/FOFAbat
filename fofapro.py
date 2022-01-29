@@ -32,7 +32,7 @@ size = '10000'
 
 fields = 'host,title,ip,domain,port,country,province,city,country_name,header,server,protocol,banner,cert,isp,as_number,as_organization,latitude,longitude,icp'
 
-api = 'https://fofa.so/api/v1/search/all?email=%s&key=%s&qbase64=%s&size=%s&fields=%s' % (email,key,query_sub[1:],size,fields)
+api = 'https://fofa.info/api/v1/search/all?email=%s&key=%s&qbase64=%s&size=%s&fields=%s' % (email,key,query_sub[1:],size,fields)
 
 #time
 localtime = time.localtime(time.time())
