@@ -9,6 +9,8 @@ import json
 import time
 import xlwt
 import re
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 print("""\033[1;36m
  ______           __                       _______
@@ -62,7 +64,7 @@ elif 'limits must less than' in response.text:
 
 else:
     res = json.loads((response.content).decode('utf-8'))
-    print(res)
+    #print(res)
 
     print("""选择要扫描的类型：
     1 【导出纯地址.txt】
@@ -74,7 +76,6 @@ else:
     if choice == '1':
         for i in range(len(res["results"])):
             url = res["results"][i]
-            print(url)
             if 'http' not in url:
                 url = 'http://' + url
                 try:
@@ -188,4 +189,3 @@ else:
     #     workbook.save(time + '.xls')
     else:
         print('\033[1;31[-] 输入的参数有误\033[0m')
-
